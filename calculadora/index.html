@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Calculadora</h1></header>
+    <section>
+        <form action="" name="Calculadora">
+            <input type="text" class="txt" name="mostrador" disabled>
+            <input type="text" class="txt1" value="C" name="clean" onclick="location.reload()"> <br>
+
+            <input type="button" class="num" value="9" name="btn9" onclick="displayn(btn9.value)">
+            <input type="button" class="num" value="8" name="btn8" onclick="displayn(btn8.value)">
+            <input type="button" class="num" value="7" name="btn7" onclick="displayn(btn7.value)">
+            <input type="button" class="num add" value="+" name="somabtn" onclick="displayn(somabtn.value)"> <br>
+            
+            <input type="button" class="num" value="6" name="btn6" onclick="displayn(btn6.value)">
+            <input type="button" class="num" value="5" name="btn5" onclick="displayn(btn5.value)">
+            <input type="button" class="num" value="4" name="btn4" onclick="displayn(btn4.value)">
+            <input type="button" class="num sub" value="-" name="subbtn" onclick="displayn(subbtn.value)"> <br>
+            
+            <input type="button" class="num" value="3" name="btn3" onclick="displayn(btn3.value)">
+            <input type="button" class="num" value="2" name="btn2" onclick="displayn(btn2.value)">
+            <input type="button" class="num" value="1" name="btn1" onclick="displayn(btn1.value)">
+            <input type="button" class="num mult" value="*" name="multbtn" onclick="displayn(multbtn.value)"> <br>
+            
+            <input type="button" class="num" value="." name="ponto" onclick="displayn(ponto.value)">
+            <input type="button" class="num" value="0" name="btn0" onclick="displayn(btn0.value)">
+            <input type="button" class="num igual" value="=" name="resultado" onclick="mostrador.value=eval(mostrador.value)">
+            <input type="button" class="num div" value="/" name="divbtn" onclick="displayn(divbtn.value)">
+        </form>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
